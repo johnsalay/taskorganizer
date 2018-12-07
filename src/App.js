@@ -1,25 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Quadrant from './components/Quadrant';
+
+import 'primereact/resources/themes/nova-light/theme.css';
+import 'primereact/resources/primereact.min.css';
+import 'primeicons/primeicons.css';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="life-organizer">
+        <Quadrant title="Important & Urgent" className="quadrant" bgColor="crimson" />
+        <Quadrant title="Not Important but Urgent" className="quadrant" bgColor="aqua" />
+        <Quadrant title="Important & Not Urgent" className="quadrant" bgColor="salmon" />
+        <Quadrant title="Not Important & Not Urgent" className="quadrant" bgColor="lawngreen" />
       </div>
     );
   }

@@ -1,0 +1,11 @@
+
+.quadrant {
+  display: flex;
+  flex-flow: column wrap;
+  min-width: 50%;
+  max-width: 50%;
+  min-height: 50%;
+  max-height: 50%;
+  /* margin: 10px; */
+  background-color: #ccc;
+}
